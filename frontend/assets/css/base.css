@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans, "Segoe UI", Arial, sans-serif);
+  background: var(--color-bg, #f5f7fb);
+  color: var(--color-text, #122033);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--space-3, 0.75rem);
+  font-family: var(--font-heading, "Segoe UI", Arial, sans-serif);
+  color: var(--color-text, #122033);
+  line-height: 1.2;
+}
+
+p,
+ul,
+ol,
+li,
+label,
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+p {
+  margin: 0 0 var(--space-3, 0.75rem);
+}
+
+a {
+  color: var(--color-primary, #1f6feb);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dark, #124fb7);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

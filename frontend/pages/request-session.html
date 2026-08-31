@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Session</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/validation.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="tutor-profile.html" aria-label="Back to tutor profile">Back</a>
+      </header>
+
+      <section aria-labelledby="request-title">
+        <h1 id="request-title">Request a session</h1>
+
+        <form action="my-session-requests.html" method="post" data-validation-form>
+          <div class="form-field">
+            <label for="tutor-name">Tutor</label>
+            <input id="tutor-name" name="tutor_name" type="text" value="Ada Adebayo" readonly />
+          </div>
+
+          <div class="form-field">
+            <label for="subject-name">Subject</label>
+            <input id="subject-name" name="subject_name" type="text" value="Maths" readonly />
+          </div>
+
+          <div class="form-field">
+            <label for="preferred-day">Preferred day</label>
+            <select id="preferred-day" name="preferred_day" required>
+              <option value="">Select day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+            <p class="field-error" id="preferred-day-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="preferred-time">Preferred time</label>
+            <select id="preferred-time" name="preferred_time" required>
+              <option value="">Select time</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+            </select>
+            <p class="field-error" id="preferred-time-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="location">Location</label>
+            <select id="location" name="location" required>
+              <option value="">Select location</option>
+              <option>Online</option>
+              <option>Home</option>
+              <option>School</option>
+            </select>
+            <p class="field-error" id="location-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="budget">Budget</label>
+            <input id="budget" name="budget" type="text" value="N5,000 / hour" readonly />
+          </div>
+
+          <div class="form-field">
+            <label for="student-level">Student details</label>
+            <input id="student-level" name="student_level" type="text" placeholder="Class / Level" required />
+            <p class="field-error" id="student-level-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message to tutor</label>
+            <textarea id="message" name="message" rows="4" placeholder="I need help with algebra..." required></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Request</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.btn-primary,
+a,
+button,
+input,
+select,
+textarea {
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease, color 0.2s ease, transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(31, 111, 235, 0.18);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(31, 111, 235, 0.38);
+  outline-offset: 2px;
+}
+
+.btn-primary:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(31, 111, 235, 0.38);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

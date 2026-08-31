@@ -1,0 +1,80 @@
+.landing-page,
+body > main {
+  display: block;
+}
+
+.landing-page section,
+body > main > section {
+  margin-top: var(--space-6, 1.5rem);
+}
+
+.hero-copy {
+  margin-bottom: var(--space-6, 1.5rem);
+}
+
+.hero-copy h1 {
+  margin-bottom: var(--space-3, 0.75rem);
+  font-size: clamp(2rem, 6vw, 2.8rem);
+}
+
+.hero-copy p {
+  color: var(--color-muted, #5b697a);
+}
+
+.role-entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3, 0.75rem);
+  margin-top: var(--space-4, 1rem);
+}
+
+.search-page form,
+.request-page form,
+.profile-form,
+.auth-page form {
+  margin-top: var(--space-4, 1rem);
+}
+
+.search-results,
+.request-list,
+.tutor-list {
+  display: grid;
+  gap: var(--space-4, 1rem);
+}
+
+.search-page .card,
+.request-page .card,
+.tutor-list .card {
+  margin-bottom: 0;
+}
+
+.tutor-profile-page section,
+.request-page section,
+.profile-page section {
+  margin-top: var(--space-5, 1.25rem);
+}
+
+.tutor-profile-page .action-row,
+.request-page .action-row,
+.profile-page .action-row {
+  margin-top: var(--space-4, 1rem);
+}
+
+.profile-page form,
+.tutor-profile-page form {
+  margin-top: var(--space-5, 1.25rem);
+}
+
+.admin-page h1,
+.admin-page h2 {
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.admin-page .table-wrap {
+  margin-top: var(--space-4, 1rem);
+}
+
+.admin-page .data-table th,
+.admin-page .data-table td {
+  white-space: nowrap;
+}

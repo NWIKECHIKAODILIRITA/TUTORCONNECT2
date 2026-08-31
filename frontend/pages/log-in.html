@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../assets/js/utils.js" defer></script>
+    <script src="../assets/js/validation.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="../index.html" aria-label="Back to landing page">Back</a>
+      </header>
+
+      <section aria-labelledby="login-title">
+        <h1 id="login-title">Welcome back</h1>
+
+        <form action="#" method="post" data-validation-form>
+          <div class="form-field">
+            <label for="login-identifier">Email / Phone</label>
+            <input id="login-identifier" name="login_identifier" type="text" required />
+            <p class="field-error" id="login-identifier-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" required />
+            <p class="field-error" id="login-password-error"></p>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </div>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <nav aria-label="Login options" class="action-row">
+          <a href="#" class="btn">Forgot password?</a>
+          <p>
+            Create account
+            <a href="sign-up.html" class="btn">Sign up</a>
+          </p>
+        </nav>
+
+        <div>
+          <p>Role-based destinations after login:</p>
+          <ul>
+            <li><a href="search-tutors.html">Parent → Search Tutors</a></li>
+            <li><a href="tutor/my-profile.html">Tutor → My Profile</a></li>
+            <li><a href="admin/approve-tutors.html">Admin → Approve Tutors</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

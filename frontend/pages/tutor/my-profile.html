@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutor My Profile</title>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <script src="../../assets/js/utils.js" defer></script>
+    <script src="../../assets/js/validation.js" defer></script>
+  </head>
+  <body>
+    <main class="profile-page">
+      <header>
+        <button type="button" aria-label="Open menu">Menu / Logout</button>
+      </header>
+
+      <section aria-labelledby="profile-title">
+        <h1 id="profile-title">My Profile</h1>
+
+        <form action="#" method="post" data-validation-form>
+          <div class="form-field">
+            <label>Profile photo</label>
+            <button type="button" class="btn">Upload photo</button>
+          </div>
+
+          <div class="form-field">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="full_name" type="text" value="Ada Adebayo" />
+          </div>
+
+          <div class="form-field">
+            <label for="subjects">Subjects</label>
+            <input id="subjects" name="subjects" type="text" value="Maths, Physics" />
+          </div>
+
+          <div class="form-field">
+            <label for="experience">Experience</label>
+            <input id="experience" name="experience" type="text" value="4 years" />
+          </div>
+
+          <div class="form-field">
+            <label for="location">Location</label>
+            <input id="location" name="location" type="text" value="Lagos" />
+          </div>
+
+          <div class="form-field">
+            <label for="availability">Availability</label>
+            <input id="availability" name="availability" type="text" value="Mon-Fri 4-8pm" />
+          </div>
+
+          <div class="form-field">
+            <label for="rate">Rate</label>
+            <input id="rate" name="rate" type="text" value="N5,000 / hour" />
+          </div>
+
+          <div class="form-field">
+            <label for="about-me">About me</label>
+            <textarea id="about-me" name="about_me" rows="4">I teach clearly and simply.</textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Save profile</button>
+        </form>
+
+        <nav aria-label="Tutor profile actions" class="action-row">
+          <a href="incoming-requests.html" class="btn">View requests</a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>

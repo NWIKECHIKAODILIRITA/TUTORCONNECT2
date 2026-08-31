@@ -1,0 +1,41 @@
+.site-header,
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3, 0.75rem);
+  padding: var(--space-4, 1rem) var(--space-4, 1rem);
+}
+
+.site-header nav,
+header nav,
+nav[aria-label] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2, 0.5rem);
+}
+
+.site-header a,
+header a,
+nav a,
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 var(--space-4, 1rem) var(--space-8, 2rem);
+}
+
+footer,
+.page-footer {
+  padding: var(--space-4, 1rem);
+  color: var(--color-muted, #5b697a);
+  margin-top: var(--space-8, 2rem);
+}
